@@ -1,0 +1,76 @@
+
+.slider {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+  
+  .slider__elements {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+  
+  .slider__element {
+    min-width: 215px;
+    height: 205px;
+    border-radius: 30px;
+    border: transparent;
+    position: relative;
+    background: linear-gradient(233.16deg, #00B0CE -10.31%, rgba(0, 176, 206, 0.3) 110.31%);
+  }
+  
+  .slider__element::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 200px;
+    height: 200px;
+    background-image: url('/img/Logo-ProFlight.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .slider__button {
+    min-width: 115px;
+    height: 110px;
+    border-radius: 50%;
+    border: transparent;
+    position: relative;
+    background: linear-gradient(233.16deg, #00B0CE -47.28%, rgba(0, 176, 206, 0.3) 73.34%);
+  }
+  
+  .slider__button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 40px;
+    height: 35px;
+    background-image: url('/img/Arrow.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  .slider__mirror {
+    transform: scaleX(-1);
+  }
+  
+  .active {
+    filter: opacity(1);
+  }
+  
+  .disable {
+    filter: opacity(0.3);
+  }
